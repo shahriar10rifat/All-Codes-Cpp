@@ -31,16 +31,21 @@ int main() {
 #include <bits/stdc++.h>
 using namespace std;
 bool prime (int a){
-    for (int i=2; i<a; i++){
+    for (int i=2; i<sqrt(a); i++){
         if(a%i==0)return false;
     }
     return true;
 }
 int main(){
     int x; cin>>x;
-        if(!prime(x)){cout<<x<<" Not Prime"<<endl;}
-        else {cout<<x<<" Prime"<<endl;}
+        if(!prime(x)){
+            cout<<x<<" Is not Prime"<<endl;
+        }
+        else{
+            cout<<x<<" Is Prime"<<endl;
+        }
     return 0;
 }
+
 */
 
